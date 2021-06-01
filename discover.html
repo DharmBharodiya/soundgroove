@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundGroove - Discover</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="discover.css">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+    <div class="container full-height-grow">
+        <header class="main-header">
+          <a href="index.html" class="brand-logo">
+            <img src="images/logo.png">
+            <div class="brand-logo-name">SoundGroove</div>
+          </a>
+          <img src="images/hamburger_grey.png" alt="" class="burger" id="burger">
+
+
+          <div class="overlay" id="overlay">
+              <img src="images/cancel.png" alt="" class="cancel" id="cancel">
+              <ul>
+                  <li><a href="discover.html">Discover</a></li>
+                  <li><a href="join.html">Join</a></li>
+                </ul>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="join.html">Join</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="discover-main-section">
+          <div class="call-to-action">
+            <h1 class="title">Discover new music</h1>
+            <div class="icon-section">
+              <div class="icon">
+                <img src="images/microphone.svg">
+                Charts
+              </div>
+              <div class="icon">
+                <img src="images/albums.svg">
+                Albums
+              </div>
+              <div class="icon">
+                <img src="images/more.svg">
+                More
+              </div>
+            </div>
+            <p class="join-para">By joining you can benefit by listening to the latest albums released.</p> 
+          </div>
+          <img class="covers-image" src="images/covers.jpg">
+        </section>
+      </div>
+
+
+      <footer class="main-footer">
+          <div class="container">
+              <nav class="footer-nav">
+                  <ul>
+                      <li>
+                          <a href="#">
+                              About Us
+                            </a>
+                        </li>
+                      <li>
+                          <a href="#">
+                              Contact
+                            </a>
+                        </li>
+                  </ul>
+              </nav>
+              <nav class="footer-nav">
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <img src="images/twitter.svg" class="socials">
+                              Twitter
+                            </a>
+                        </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/facebook.svg" class="socials">
+                              Facebook
+                            </a>
+                        </li>
+                  </ul>
+              </nav>
+          </div>
+      </footer>
+
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+
+      <!-- javascript -->
+
+      <script>
+        var burger = document.getElementById("burger");
+        var cancel = document.getElementById("cancel");
+        var overlay = document.getElementById("overlay");
+  
+        burger.addEventListener("click", function(){
+          overlay.style.right = "0";
+        })
+  
+        cancel.addEventListener("click", function(){
+            overlay.style.right = "-100em"
+        })
+    </script>
+
+</body>
+</html>
